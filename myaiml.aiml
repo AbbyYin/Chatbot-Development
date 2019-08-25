@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!--  -->
+<category><pattern>MY NAME IS *</pattern>
+<template><srai>I AM <star/></srai></template>
+</category>
+<category><pattern>CALL ME *</pattern>
+<template><srai>I AM <star/></srai></template>
+</category>
+<category><pattern>I'M *</pattern>
+<template><srai>I AM <star/></srai></template>
+</category>
+<category><pattern>I AM *</pattern>
+<template>Hello <set name="username"> <star/> </set>! Please specify the type of computer you want from the following options: 
+        General, Student, Business, Coding, Design, Game</template>
+</category>
+<category><pattern>_ GENERAL *</pattern>
+<template><srai>GENERAL</srai></template>
+</category>
+<category><pattern>_ GENERAL</pattern>
+<template><srai>GENERAL</srai></template>
+</category>
+<category><pattern>GENERAL *</pattern>
+<template><srai>GENERAL</srai></template>
+</category>
+<category><pattern>GENERAL</pattern>
+<template><set name="topic">General</set>, got it! 
+        Please tell me your price preference.
+        Do you prefer low, medium or high?</template>
+</category>
+<category><pattern>_ LOW *</pattern>
+<template><srai>LOW</srai></template>
+</category>
+<category><pattern>_ LOW</pattern>
+<template><srai>LOW</srai></template>
+</category>
+<category><pattern>LOW *</pattern>
+<template><srai>LOW</srai></template>
+</category>
+<category><pattern>LOW</pattern>
+<template><template/></template>
+</category>
+<category><pattern>_ MEDIUM *</pattern>
+<template><srai>MEDIUM</srai></template>
+</category>
+<category><pattern>_ MEDIUM</pattern>
+<template><srai>MEDIUM</srai></template>
+</category>
+<category><pattern>MEDIUM *</pattern>
+<template><srai>MEDIUM</srai></template>
+</category>
+<category><pattern>MEDIUM</pattern>
+<template><template/></template>
+</category>
+<category><pattern>_ HIGH *</pattern>
+<template><srai>HIGH</srai></template>
+</category>
+<category><pattern>_ HIGH</pattern>
+<template><srai>HIGH</srai></template>
+</category>
+<category><pattern>HIGH *</pattern>
+<template><srai>HIGH</srai></template>
+</category>
+<category><pattern>HIGH</pattern>
+<template><template/></template>
+</category>
+<topic name="GENERAL">
+<category><pattern>LOW</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Dell G Series Series, G3 17", Price: 1999 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 1152 GB, Display: 17.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 3.27 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g3-17-gaming-laptop/spd/g-series-17-3779-laptop
+
+        Acer Spin Series, Spin 3, Price: 1199 AUD, CPU: 8250U, GPU: UHD620, Memory: 8 GB, Hadr Drive: 128 GB, Display: 14 inch, Resolution: 1920*1080pixels, Touchable: Y, Active Pen: Y, Battery: 48 Whr, Weight: 1.70 kilograms. And for more information you can visit: https://www.acer.com/ac/en/AU/content/model/NX.GZRSA.004
+
+        Acer Aspire Series, Aspire 5, Price: 1199 AUD, CPU: 8850U, GPU: MX130, Memory: 4 GB, Hadr Drive: 2048 GB, Display: 15.6 inch, Resolution: 1366*768pixels, Touchable: N, Active Pen: N, Battery: 60 Whr, Weight: 2.2 kilograms. And for more information you can visit: https://www.acer.com/ac/en/AU/content/model/NX.H2LSA.003
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Acer Swift Series, Swift 3, Price: 1399 AUD, CPU: 8500U, GPU: UHD620, Memory: 8 GB, Hadr Drive: 256 GB, Display: 14 inch, Resolution: 1920*1080pixels, Touchable: N, Active Pen: N, Battery: 48 Whr, Weight: 1.45 kilograms. And for more information you can visit: https://www.acer.com/ac/en/AU/content/model/NX.GXZSA.002
+
+        Acer Switch Series, Switch 5, Price: 1599 AUD, CPU: 7200U, GPU: HD620, Memory: 8 GB, Hadr Drive: 256 GB, Display: 12 inch, Resolution: 2560*1440pixels, Touchable: Y, Active Pen: Y, Battery: 48 Whr, Weight: 1.27 kilograms. And for more information you can visit: https://www.acer.com/ac/en/AU/content/model/NT.LDSSA.001
+
+        Dell Inspiron Series, Inspiron 13, Price: 1599 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1080pixels, Touchable: Y, Active Pen: Y, Battery: 38 Whr, Weight: 1.40 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/inspiron-13-7000/spd/inspiron-13-7370-laptop/a510972au
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+              
+        <li>Here are the computers recommended for you:
+        
+        HP ENVY Series, ENVY X2, Price: 1799 AUD, CPU: 7Y54, GPU: HD615, Memory: 8 GB, Hadr Drive: 256 GB, Display: 12.3 inch, Resolution: 1920 x 1280pixels, Touchable: Y, Active Pen: Y, Battery: 49.3 Whr, Weight: 0.76 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=3VG58PA
+
+        HP Spectre Series, Spectre X2, Price: 1799 AUD, CPU: 7560U, GPU: Iris Plus 640, Memory: 16 GB, Hadr Drive: 1024 GB, Display: 12.3 inch, Resolution: 3000*2000pixels, Touchable: Y, Active Pen: Y, Battery: 42 Whr, Weight: 0.76 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=1PM47PA
+
+        Acer Spin Series, Spin 5, Price: 1799 AUD, CPU: 8550U, GPU: UHD620, Memory: 8 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920*1080pixels, Touchable: Y, Active Pen: Y, Battery: 52 Whr, Weight: 1.60 kilograms. And for more information you can visit: https://www.acer.com/ac/en/AU/content/model/NX.GR7SA.006
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>        
+</random></template>
+</category></topic>
+
+<topic name="GENERAL">
+<category><pattern>MEDIUM</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        HP ENVY Series, ENVY 13'', Price: 2299 AUD, CPU: 8550U, GPU: MX150, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 53.2 Whr, Weight: 1.21 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4CF25PA
+
+        HP Spectre Series, Spectre 13'', Price: 2299 AUD, CPU: 8550U, GPU: MX150, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1280pixels, Touchable: N, Active Pen: N, Battery: 53.2 Whr, Weight: 1.21 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4CF25PA
+
+        Dell G Series Series, G7 15", Price: 2299 AUD, CPU: 8750H, GPU: GTX 1060 Max Q, Memory: 16 GB, Hadr Drive: 1280 GB, Display: 15.7 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 2.86 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g7-15-gaming-laptop/spd/g-series-15-7588-laptop
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Dell G Series Series, G7 15", Price: 2299 AUD, CPU: 8750H, GPU: GTX 1060 Max Q, Memory: 16 GB, Hadr Drive: 1280 GB, Display: 15.7 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 2.86 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g7-15-gaming-laptop/spd/g-series-15-7588-laptop
+
+        Lenovo ThinkPad Series, T480, Price: 2399 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 72 Whr, Weight: 1.65 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X280/p/20KFCTO1WWENAU5/customize?
+
+        Acer Swift Series, Swift 5, Price: 2499 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 1920*1080pixels, Touchable: Y, Active Pen: N, Battery: 36 Whr, Weight: 0.97 kilograms. And for more information you can visit: http://store.acer.com.au/acer/store/index.php/notebook/aspire-swift-5-i7-16gb-512gb-ssd-touch-screen.html?utm_source=www.acer.com.au
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+              
+        <li>Here are the computers recommended for you:
+        
+        HP Spectre Series, Spectre X360 13'', Price: 2499 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1280pixels, Touchable: Y, Active Pen: Y, Battery: 60 Whr, Weight: 1.26 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=3MP23PA
+
+        HP OMEN Series, OMEN 17'', Price: 2599 AUD, CPU: 7700HQ, GPU: GTX 1050 , Memory: 16 GB, Hadr Drive: 2048 GB, Display: 17.3 inch, Resolution: 1920 x 1280 pixels, Touchable: N, Active Pen: N, Battery: 85 Whr, Weight: 3.78 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=2JQ27PA
+
+        HP ENVY Series, ENVY X360 15'' , Price: 2699 AUD, CPU: 8550U, GPU: MX150, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: Y, Active Pen: Y, Battery: 52.3 Whr, Weight: 2.04 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4NE35PA
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>
+
+        <li>Here are the computers recommended for you:
+        
+        Lenovo ThinkPad Series, T580, Price: 2999 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 72 Whr, Weight: 1.99 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-t-series/ThinkPad-T580/p/20L9CTO1WWENAU4/customize?
+
+        Dell XPS Series, XPS 15'', Price: 2999 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: N, Battery: 97 Whr, Weight: 2 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/xps-15/spd/xps-15-9570-laptop?appliedRefinements=402
+
+        Dell Alienware Series, Alienware 15'', Price: 2999 AUD, CPU: 8750H, GPU: GTX 1070, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 99 Whr, Weight: 3.49 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/new-alienware-15-gaming-laptop/spd/alienware-15-laptop
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>          
+</random></template>
+</category></topic>
+
+<topic name="GENERAL">
+<category><pattern>HIGH</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Lenovo ThinkPad Series, X1 Yoga, Price: 3199 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 2560*1440pixels, Touchable: Y, Active Pen: Y, Battery: 54 Whr, Weight: 1.4 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Yoga-3rd-Gen/p/20LFCTO1WWENAU1/customize?
+
+        Apple MacBook Pro Series, MacBook Pro 13'', Price: 3299 AUD, CPU: 8559U, GPU: Iris Plus 655, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 2560*1600pixels, Touchable: N, Active Pen: N, Battery: 58 Whr, Weight: 1.37 kilograms. And for more information you can visit: https://www.apple.com/au/shop/buy-mac/macbook-pro/13-inch-space-grey-2.3ghz-quad-core-512gb#
+
+        Dell Alienware Series, Alienware m15'', Price: 3499 AUD, CPU: 8750H, GPU: GTX 1070 Max Q, Memory: 16 GB, Hadr Drive: 1152 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 90 Whr, Weight: 2.16 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/new-alienware-m15-gaming-laptop/spd/alienware-m15-laptop
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        HP Spectre Series, Spectre X360 15'', Price: 3699 AUD, CPU: 8705G, GPU: RX Vega M GL, Memory: 16 GB, Hadr Drive: 1024 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 84 Whr, Weight: 2.08 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=3WP19PA
+
+        Dell Alienware Series, Alienware 17'', Price: 3699 AUD, CPU: 8750H, GPU: GTX 1070, Memory: 16 GB, Hadr Drive: 512 GB, Display: 17.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 99 Whr, Weight: 4.42 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/alienware-17-gaming-laptop/spd/alienware-17-laptop
+
+        Lenovo ThinkPad Series, X1 Extreme, Price: 3999 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 80 Whr, Weight: 1.8 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Extreme/p/20MFCTO1WWENAU3/customize?
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+              
+        <li>Here are the computers recommended for you:
+        
+        Dell XPS Series, XPS 15'' 2-in-1, Price: 3999 AUD, CPU: 8705G , GPU: RX Vega M GL, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 75 Whr, Weight: 2 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/xps-15-2-in-1/spd/xps-15-9575-2-in-1-laptop?appliedRefinements=401,202,101
+
+        Apple MacBook Pro Series, MacBook Pro 15'', Price: 4099 AUD, CPU: 8750H, GPU: Redeon Pro 550X, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.4 inch, Resolution: 2880*1800pixels, Touchable: N, Active Pen: N, Battery: 83.6 Whr, Weight: 1.82 kilograms. And for more information you can visit: https://www.apple.com/au/shop/buy-mac/macbook-pro/15-inch-space-grey-2.6ghz-6-core-512gb#
+
+        HP OMEN Series, OMEN X 17'', Price: 4599 AUD, CPU: 7820HK, GPU: GTX 1080, Memory: 16 GB, Hadr Drive: 1024 GB, Display: 17.3 inch, Resolution: 1920 x 1280pixels, Touchable: N, Active Pen: N, Battery: 99 Whr, Weight: 4.52 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=2UJ72PA
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>        
+</random></template>
+</category></topic>
+
+<category><pattern>_ STUDENT *</pattern>
+<template><srai>STUDENT</srai></template>
+</category>
+<category><pattern>_ STUDENT</pattern>
+<template><srai>STUDENT</srai></template>
+</category>
+<category><pattern>STUDENT *</pattern>
+<template><srai>STUDENT</srai></template>
+</category>
+<category><pattern>STUDENT</pattern>
+<template><set name="topic">Student</set>, got it! Hope you have finished your Java assignment.
+        Please tell me your price preference.
+        Do you prefer low, medium or high?</template>
+</category>
+<topic name="STUDENT">
+<category><pattern>LOW</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        HP ENVY Series, ENVY X2, Price: 1799 AUD, CPU: 7Y54, GPU: HD615, Memory: 8 GB, Hadr Drive: 256 GB, Display: 12.3 inch, Resolution: 1920 x 1280pixels, Touchable: Y, Active Pen: Y, Battery: 49.3 Whr, Weight: 0.76 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=3VG58PA
+
+        HP Spectre Series, Spectre X2, Price: 1799 AUD, CPU: 7560U, GPU: Iris Plus 640, Memory: 16 GB, Hadr Drive: 1024 GB, Display: 12.3 inch, Resolution: 3000*2000pixels, Touchable: Y, Active Pen: Y, Battery: 42 Whr, Weight: 0.76 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=1PM47PA
+
+        Dell G Series Series, G3 15", Price: 1799 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 24 GB, Hadr Drive: 1024 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 2.53 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g3-15-gaming-laptop/spd/g-series-15-3579-laptop
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Dell G Series Series, G5 15", Price: 1999 AUD, CPU: 8750H, GPU: GTX 1060 Max Q, Memory: 8 GB, Hadr Drive: 1152 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 2.65 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g5-15-gaming-laptop/spd/g-series-15-5587-laptop
+
+        Acer Aspire Series, Aspire 7, Price: 1999 AUD, CPU: 8300H, GPU: GTX 1060 , Memory: 16 GB, Hadr Drive: 256 GB, Display: 17.3 inch, Resolution: 1920*1080pixels, Touchable: N, Active Pen: N, Battery: 60 Whr, Weight: 3 kilograms. And for more information you can visit: https://www.acer.com/ac/en/AU/content/model/NH.GXESA.003
+
+        Dell G Series Series, G3 17", Price: 1999 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 1152 GB, Display: 17.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 3.27 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g3-17-gaming-laptop/spd/g-series-17-3779-laptop
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>      
+</random></template>
+</category></topic>
+
+<topic name="STUDENT">
+<category><pattern>MEDIUM</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Lenovo ThinkPad Series, X280, Price: 2199 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 12.5 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 48 Whr, Weight: 1.16 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X280/p/20KFCTO1WWENAU5/customize?
+
+        HP ENVY Series, ENVY 13'', Price: 2299 AUD, CPU: 8550U, GPU: MX150, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 53.2 Whr, Weight: 1.21 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4CF25PA
+
+        HP Spectre Series, Spectre 13'', Price: 2299 AUD, CPU: 8550U, GPU: MX150, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1280pixels, Touchable: N, Active Pen: N, Battery: 53.2 Whr, Weight: 1.21 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4CF25PA
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Acer Swift Series, Swift 5, Price: 2499 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 1920*1080pixels, Touchable: Y, Active Pen: N, Battery: 36 Whr, Weight: 0.97 kilograms. And for more information you can visit: http://store.acer.com.au/acer/store/index.php/notebook/aspire-swift-5-i7-16gb-512gb-ssd-touch-screen.html?utm_source=www.acer.com.au
+        
+        Apple MacBook Series, MacBook 12'', Price: 2900 AUD, CPU: 7Y75, GPU: HD615, Memory: 16 GB, Hadr Drive: 512 GB, Display: 12 inch, Resolution: 2304*1440pixels, Touchable: N, Active Pen: N, Battery: 41.4 Whr, Weight: 0.92 kilograms. And for more information you can visit: https://www.apple.com/au/shop/buy-mac/macbook/space-grey-1.3ghz#
+
+        Lenovo ThinkPad Series, X1 Carbon, Price: 2999 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 2560*1440pixels, Touchable: N, Active Pen: N, Battery: 57 Whr, Weight: 1.13 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Carbon-6th-Gen/p/20KHCTO1WWENAU2/customize?
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>       
+</random></template>
+</category></topic>
+
+<topic name="STUDENT">
+<category><pattern>HIGH</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Lenovo ThinkPad Series, X1 Extreme, Price: 3999 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 80 Whr, Weight: 1.8 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Extreme/p/20MFCTO1WWENAU3/customize?
+
+        Dell XPS Series, XPS 15'' 2-in-1, Price: 3999 AUD, CPU: 8705G , GPU: RX Vega M GL, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 75 Whr, Weight: 2 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/xps-15-2-in-1/spd/xps-15-9575-2-in-1-laptop?appliedRefinements=401,202,101
+
+        Apple MacBook Pro Series, MacBook Pro 15'', Price: 4099 AUD, CPU: 8750H, GPU: Redeon Pro 550X, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.4 inch, Resolution: 2880*1800pixels, Touchable: N, Active Pen: N, Battery: 83.6 Whr, Weight: 1.82 kilograms. And for more information you can visit: https://www.apple.com/au/shop/buy-mac/macbook-pro/15-inch-space-grey-2.6ghz-6-core-512gb#
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>         
+              
+        <li>Here are the computers recommended for you:
+        
+        Lenovo ThinkPad Series, X1 Yoga, Price: 3199 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 2560*1440pixels, Touchable: Y, Active Pen: Y, Battery: 54 Whr, Weight: 1.4 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Yoga-3rd-Gen/p/20LFCTO1WWENAU1/customize?
+
+        Apple MacBook Pro Series, MacBook Pro 13'', Price: 3299 AUD, CPU: 8559U, GPU: Iris Plus 655, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 2560*1600pixels, Touchable: N, Active Pen: N, Battery: 58 Whr, Weight: 1.37 kilograms. And for more information you can visit: https://www.apple.com/au/shop/buy-mac/macbook-pro/13-inch-space-grey-2.3ghz-quad-core-512gb#
+        
+        HP Spectre Series, Spectre X360 15'', Price: 3699 AUD, CPU: 8705G, GPU: RX Vega M GL, Memory: 16 GB, Hadr Drive: 1024 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 84 Whr, Weight: 2.08 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=3WP19PA
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>        
+</random></template>
+</category></topic>
+
+<category><pattern>_ BUSINESS *</pattern>
+<template><srai>BUSINESS</srai></template>
+</category>
+<category><pattern>_ BUSINESS</pattern>
+<template><srai>BUSINESS</srai></template>
+</category>
+<category><pattern>BUSINESS *</pattern>
+<template><srai>BUSINESS</srai></template>
+</category>
+<category><pattern>BUSINESS</pattern>
+<template><set name="topic">Business</set>, got it! Btw, post your recruiment information on HandShake and you will get a surprise!
+        Please tell me your price preference.
+        Do you prefer low, medium or high?</template>
+</category>
+<topic name="BUSINESS">
+<category><pattern>LOW</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        HP ENVY Series, ENVY X2, Price: 1799 AUD, CPU: 7Y54, GPU: HD615, Memory: 8 GB, Hadr Drive: 256 GB, Display: 12.3 inch, Resolution: 1920 x 1280pixels, Touchable: Y, Active Pen: Y, Battery: 49.3 Whr, Weight: 0.76 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=3VG58PA
+
+        Dell Inspiron Series, Inspiron 13, Price: 1599 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1080pixels, Touchable: Y, Active Pen: Y, Battery: 38 Whr, Weight: 1.40 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/inspiron-13-7000/spd/inspiron-13-7370-laptop/a510972au
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        HP Spectre Series, Spectre X2, Price: 1799 AUD, CPU: 7560U, GPU: Iris Plus 640, Memory: 16 GB, Hadr Drive: 1024 GB, Display: 12.3 inch, Resolution: 3000*2000pixels, Touchable: Y, Active Pen: Y, Battery: 42 Whr, Weight: 0.76 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=1PM47PA
+
+        Dell Inspiron Series, Inspiron 13, Price: 1599 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1080pixels, Touchable: Y, Active Pen: Y, Battery: 38 Whr, Weight: 1.40 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/inspiron-13-7000/spd/inspiron-13-7370-laptop/a510972au
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>        
+</random></template>
+</category></topic>
+
+<topic name="BUSINESS">
+<category><pattern>MEDIUM</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Acer ThinkPad Series, X280, Price: 2199 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 12.5 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 48 Whr, Weight: 1.16 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X280/p/20KFCTO1WWENAU5/customize?
+
+        Lenovo ENVY Series, ENVY 13'', Price: 2299 AUD, CPU: 8550U, GPU: MX150, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 53.2 Whr, Weight: 1.21 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4CF25PA
+
+        Lenovo Spectre Series, Spectre 13'', Price: 2299 AUD, CPU: 8550U, GPU: MX150, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1280pixels, Touchable: N, Active Pen: N, Battery: 53.2 Whr, Weight: 1.21 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4CF25PA
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        HP XPS Series, XPS 13'' 2-in-1, Price: 2399 AUD, CPU: 8500Y , GPU: HD615, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 3200X1800pixels, Touchable: Y, Active Pen: Y, Battery: 46 Whr, Weight: 1.24 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/xps-13-2-in-1/spd/xps-13-9365-2-in-1-laptop?appliedRefinements=402,102
+
+        Lenovo ThinkPad Series, T480, Price: 2399 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 72 Whr, Weight: 1.65 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X280/p/20KFCTO1WWENAU5/customize?
+
+        Dell Swift Series, Swift 5, Price: 2499 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 1920*1080pixels, Touchable: Y, Active Pen: N, Battery: 36 Whr, Weight: 0.97 kilograms. And for more information you can visit: http://store.acer.com.au/acer/store/index.php/notebook/aspire-swift-5-i7-16gb-512gb-ssd-touch-screen.html?utm_source=www.acer.com.au
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+              
+        <li>Here are the computers recommended for you:
+        
+        Dell XPS Series, XPS 13'', Price: 2789 AUD, CPU: 8550U, GPU: UHD620, Memory: 8 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: N, Battery: 52 Whr, Weight: 1.21 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/new-xps-13-laptop/spd/xps-13-9370-laptop
+
+        Apple MacBook Series, MacBook 12'', Price: 2900 AUD, CPU: 7Y75, GPU: HD615, Memory: 16 GB, Hadr Drive: 512 GB, Display: 12 inch, Resolution: 2304*1440pixels, Touchable: N, Active Pen: N, Battery: 41.4 Whr, Weight: 0.92 kilograms. And for more information you can visit: https://www.apple.com/au/shop/buy-mac/macbook/space-grey-1.3ghz#
+
+        Lenovo ThinkPad Series, X1 Carbon, Price: 2999 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 2560*1440pixels, Touchable: N, Active Pen: N, Battery: 57 Whr, Weight: 1.13 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Carbon-6th-Gen/p/20KHCTO1WWENAU2/customize?
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>        
+</random></template>
+</category></topic>
+
+<topic name="BUSINESS">
+<category><pattern>HIGH</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Lenovo ThinkPad Series, X1 Yoga, Price: 3199 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 2560*1440pixels, Touchable: Y, Active Pen: Y, Battery: 54 Whr, Weight: 1.4 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Yoga-3rd-Gen/p/20LFCTO1WWENAU1/customize?
+
+        Apple MacBook Pro Series, MacBook Pro 13'', Price: 3299 AUD, CPU: 8559U, GPU: Iris Plus 655, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 2560*1600pixels, Touchable: N, Active Pen: N, Battery: 58 Whr, Weight: 1.37 kilograms. And for more information you can visit: https://www.apple.com/au/shop/buy-mac/macbook-pro/13-inch-space-grey-2.3ghz-quad-core-512gb#
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Lenovo ThinkPad Series, X1 Extreme, Price: 3999 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 80 Whr, Weight: 1.8 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Extreme/p/20MFCTO1WWENAU3/customize?
+
+        Apple MacBook Pro Series, MacBook Pro 15'', Price: 4099 AUD, CPU: 8750H, GPU: Redeon Pro 550X, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.4 inch, Resolution: 2880*1800pixels, Touchable: N, Active Pen: N, Battery: 83.6 Whr, Weight: 1.82 kilograms. And for more information you can visit: https://www.apple.com/au/shop/buy-mac/macbook-pro/15-inch-space-grey-2.6ghz-6-core-512gb#
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>      
+</random></template>
+</category></topic>
+
+<category><pattern>_ CODING *</pattern>
+<template><srai>CODING</srai></template>
+</category>
+<category><pattern>_ CODING</pattern>
+<template><srai>CODING</srai></template>
+</category>
+<category><pattern>CODING *</pattern>
+<template><srai>CODING</srai></template>
+</category>
+<category><pattern>CODING</pattern>
+<template><set name="topic">Coding</set>, got it! I guess you are from CMU! :D
+        Please tell me your price preference.
+        Do you prefer low, medium or high?</template>
+</category>
+<topic name="CODING">
+<category><pattern>LOW</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Acer Aspire Series, Aspire 5, Price: 1199 AUD, CPU: 8850U, GPU: MX130, Memory: 4 GB, Hadr Drive: 2048 GB, Display: 15.6 inch, Resolution: 1366*768pixels, Touchable: N, Active Pen: N, Battery: 60 Whr, Weight: 2.2 kilograms. And for more information you can visit: https://www.acer.com/ac/en/AU/content/model/NX.H2LSA.003
+
+        Dell Inspiron Series, Inspiron 13, Price: 1599 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1080pixels, Touchable: Y, Active Pen: Y, Battery: 38 Whr, Weight: 1.40 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/inspiron-13-7000/spd/inspiron-13-7370-laptop/a510972au  
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Acer Spin Series, Spin 5, Price: 1799 AUD, CPU: 8550U, GPU: UHD620, Memory: 8 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920*1080pixels, Touchable: Y, Active Pen: Y, Battery: 52 Whr, Weight: 1.60 kilograms. And for more information you can visit: https://www.acer.com/ac/en/AU/content/model/NX.GR7SA.006
+
+        Dell G Series Series, G3 15", Price: 1799 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 24 GB, Hadr Drive: 1024 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 2.53 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g3-15-gaming-laptop/spd/g-series-15-3579-laptop
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+              
+        <li>Here are the computers recommended for you:
+        
+        Dell Inspiron Series, Inspiron 15, Price: 1999 AUD, CPU: 8550U, GPU: MX130, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 56 Whr, Weight: 1.995 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/inspiron-15-7000/spd/inspiron-15-7570-laptop
+
+        Dell G Series Series, G5 15", Price: 1999 AUD, CPU: 8750H, GPU: GTX 1060 Max Q, Memory: 8 GB, Hadr Drive: 1152 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 2.65 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g5-15-gaming-laptop/spd/g-series-15-5587-laptop
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>        
+</random></template>
+</category></topic>
+
+<topic name="CODING">
+<category><pattern>MEDIUM</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Dell G Series Series, G7 15", Price: 2299 AUD, CPU: 8750H, GPU: GTX 1060 Max Q, Memory: 16 GB, Hadr Drive: 1280 GB, Display: 15.7 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 2.86 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g7-15-gaming-laptop/spd/g-series-15-7588-laptop
+
+        HP ENVY Series, ENVY 13'', Price: 2299 AUD, CPU: 8550U, GPU: MX150, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 53.2 Whr, Weight: 1.21 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4CF25PA
+
+        HP Spectre Series, Spectre 13'', Price: 2299 AUD, CPU: 8550U, GPU: MX150, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1280pixels, Touchable: N, Active Pen: N, Battery: 53.2 Whr, Weight: 1.21 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4CF25PA
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Lenovo ThinkPad Series, T480, Price: 2399 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 72 Whr, Weight: 1.65 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X280/p/20KFCTO1WWENAU5/customize?
+
+        HP Spectre Series, Spectre X360 13'', Price: 2499 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1280pixels, Touchable: Y, Active Pen: Y, Battery: 60 Whr, Weight: 1.26 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=3MP23PA
+
+        Acer Swift Series, Swift 5, Price: 2499 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 1920*1080pixels, Touchable: Y, Active Pen: N, Battery: 36 Whr, Weight: 0.97 kilograms. And for more information you can visit: http://store.acer.com.au/acer/store/index.php/notebook/aspire-swift-5-i7-16gb-512gb-ssd-touch-screen.html?utm_source=www.acer.com.au
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+              
+        <li>Here are the computers recommended for you:
+        
+        HP ENVY Series, ENVY X360 15'' , Price: 2699 AUD, CPU: 8550U, GPU: MX150, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: Y, Active Pen: Y, Battery: 52.3 Whr, Weight: 2.04 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4NE35PA
+
+        Dell XPS Series, XPS 13'', Price: 2789 AUD, CPU: 8550U, GPU: UHD620, Memory: 8 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: N, Battery: 52 Whr, Weight: 1.21 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/new-xps-13-laptop/spd/xps-13-9370-laptop
+
+        Dell Alienware Series, Alienware 13'', Price: 2799 AUD, CPU: 7700HQ, GPU: GTX 1060 , Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 76 Whr, Weight: 2.6 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/alienware-13-gaming-laptop/spd/alienware-13-laptop
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>        
+</random></template>
+</category></topic>
+
+<topic name="CODING">
+<category><pattern>HIGH</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Lenovo ThinkPad Series, X1 Yoga, Price: 3199 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 2560*1440pixels, Touchable: Y, Active Pen: Y, Battery: 54 Whr, Weight: 1.4 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Yoga-3rd-Gen/p/20LFCTO1WWENAU1/customize?
+
+        Apple MacBook Pro Series, MacBook Pro 13'', Price: 3299 AUD, CPU: 8559U, GPU: Iris Plus 655, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 2560*1600pixels, Touchable: N, Active Pen: N, Battery: 58 Whr, Weight: 1.37 kilograms. And for more information you can visit: https://www.apple.com/au/shop/buy-mac/macbook-pro/13-inch-space-grey-2.3ghz-quad-core-512gb#  
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Dell Alienware Series, Alienware m15'', Price: 3499 AUD, CPU: 8750H, GPU: GTX 1070 Max Q, Memory: 16 GB, Hadr Drive: 1152 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 90 Whr, Weight: 2.16 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/new-alienware-m15-gaming-laptop/spd/alienware-m15-laptop
+
+        HP Spectre Series, Spectre X360 15'', Price: 3699 AUD, CPU: 8705G, GPU: RX Vega M GL, Memory: 16 GB, Hadr Drive: 1024 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 84 Whr, Weight: 2.08 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=3WP19PA
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+              
+        <li>Here are the computers recommended for you:
+        
+        Lenovo ThinkPad Series, X1 Extreme, Price: 3999 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 80 Whr, Weight: 1.8 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Extreme/p/20MFCTO1WWENAU3/customize?
+
+        Dell XPS Series, XPS 15'' 2-in-1, Price: 3999 AUD, CPU: 8705G , GPU: RX Vega M GL, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 75 Whr, Weight: 2 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/xps-15-2-in-1/spd/xps-15-9575-2-in-1-laptop?appliedRefinements=401,202,101
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>        
+</random></template>
+</category></topic>
+
+<category><pattern>_ DESIGN *</pattern>
+<template><srai>DESIGN</srai></template>
+</category>
+<category><pattern>_ DESIGN</pattern>
+<template><srai>DESIGN</srai></template>
+</category>
+<category><pattern>DESIGN *</pattern>
+<template><srai>DESIGN</srai></template>
+</category>
+<category><pattern>DESIGN</pattern>
+<template><set name="topic">Design</set>, got it! You are as COOL as Professor Stu!
+        Please tell me your price preference.
+        Do you prefer low, medium or high?</template>
+</category>
+<topic name="DESIGN">
+<category><pattern>LOW</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Acer Switch Series, Switch 5, Price: 1599 AUD, CPU: 7200U, GPU: HD620, Memory: 8 GB, Hadr Drive: 256 GB, Display: 12 inch, Resolution: 2560*1440pixels, Touchable: Y, Active Pen: Y, Battery: 48 Whr, Weight: 1.27 kilograms. And for more information you can visit: https://www.acer.com/ac/en/AU/content/model/NT.LDSSA.001
+
+        Dell Inspiron Series, Inspiron 13, Price: 1599 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1080pixels, Touchable: Y, Active Pen: Y, Battery: 38 Whr, Weight: 1.40 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/inspiron-13-7000/spd/inspiron-13-7370-laptop/a510972au
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        HP ENVY Series, ENVY X2, Price: 1799 AUD, CPU: 7Y54, GPU: HD615, Memory: 8 GB, Hadr Drive: 256 GB, Display: 12.3 inch, Resolution: 1920 x 1280pixels, Touchable: Y, Active Pen: Y, Battery: 49.3 Whr, Weight: 0.76 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=3VG58PA
+
+        HP Spectre Series, Spectre X2, Price: 1799 AUD, CPU: 7560U, GPU: Iris Plus 640, Memory: 16 GB, Hadr Drive: 1024 GB, Display: 12.3 inch, Resolution: 3000*2000pixels, Touchable: Y, Active Pen: Y, Battery: 42 Whr, Weight: 0.76 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=1PM47PA
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+              
+        <li>Here are the computers recommended for you:
+        
+        Acer Spin Series, Spin 5, Price: 1799 AUD, CPU: 8550U, GPU: UHD620, Memory: 8 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920*1080pixels, Touchable: Y, Active Pen: Y, Battery: 52 Whr, Weight: 1.60 kilograms. And for more information you can visit: https://www.acer.com/ac/en/AU/content/model/NX.GR7SA.006
+
+        Dell Inspiron Series, Inspiron 15, Price: 1999 AUD, CPU: 8550U, GPU: MX130, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 56 Whr, Weight: 1.995 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/inspiron-15-7000/spd/inspiron-15-7570-laptop
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>        
+</random></template>
+</category></topic>
+
+<topic name="DESIGN">
+<category><pattern>MEDIUM</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Dell XPS Series, XPS 13'' 2-in-1, Price: 2399 AUD, CPU: 8500Y , GPU: HD615, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 3200X1800pixels, Touchable: Y, Active Pen: Y, Battery: 46 Whr, Weight: 1.24 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/xps-13-2-in-1/spd/xps-13-9365-2-in-1-laptop?appliedRefinements=402,102
+
+        HP Spectre Series, Spectre X360 13'', Price: 2499 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1280pixels, Touchable: Y, Active Pen: Y, Battery: 60 Whr, Weight: 1.26 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=3MP23PA
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        HP ENVY Series, ENVY X360 15'' , Price: 2699 AUD, CPU: 8550U, GPU: MX150, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: Y, Active Pen: Y, Battery: 52.3 Whr, Weight: 2.04 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4NE35PA
+
+        Dell XPS Series, XPS 13'' 2-in-1, Price: 2399 AUD, CPU: 8500Y , GPU: HD615, Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 3200X1800pixels, Touchable: Y, Active Pen: Y, Battery: 46 Whr, Weight: 1.24 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/xps-13-2-in-1/spd/xps-13-9365-2-in-1-laptop?appliedRefinements=402,102
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+</random></template>
+</category></topic>
+
+<topic name="DESIGN">
+<category><pattern>HIGH</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Lenovo ThinkPad Series, X1 Extreme, Price: 3999 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 80 Whr, Weight: 1.8 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Extreme/p/20MFCTO1WWENAU3/customize?
+
+        Dell XPS Series, XPS 15'' 2-in-1, Price: 3999 AUD, CPU: 8705G , GPU: RX Vega M GL, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 75 Whr, Weight: 2 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/xps-15-2-in-1/spd/xps-15-9575-2-in-1-laptop?appliedRefinements=401,202,101
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Lenovo ThinkPad Series, X1 Yoga, Price: 3199 AUD, CPU: 8550U, GPU: UHD620, Memory: 16 GB, Hadr Drive: 512 GB, Display: 14 inch, Resolution: 2560*1440pixels, Touchable: Y, Active Pen: Y, Battery: 54 Whr, Weight: 1.4 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Yoga-3rd-Gen/p/20LFCTO1WWENAU1/customize?
+        
+        HP Spectre Series, Spectre X360 15'', Price: 3699 AUD, CPU: 8705G, GPU: RX Vega M GL, Memory: 16 GB, Hadr Drive: 1024 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 84 Whr, Weight: 2.08 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=3WP19PA
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>      
+</random></template>
+</category></topic>
+
+<category><pattern>_ GAME *</pattern>
+<template><srai>GAME</srai></template>
+</category>
+<category><pattern>_ GAME</pattern>
+<template><srai>GAME</srai></template>
+</category>
+<category><pattern>GAME *</pattern>
+<template><srai>GAME</srai></template>
+</category>
+<category><pattern>GAME</pattern>
+<template><set name="topic">Game</set>, got it! Winner winner, chicken dinner!
+        Please tell me your price preference.
+        Do you prefer low, medium or high?</template>
+</category>
+<topic name="GAME">
+<category><pattern>LOW</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Dell G Series Series, G3 15", Price: 1799 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 24 GB, Hadr Drive: 1024 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 2.53 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g3-15-gaming-laptop/spd/g-series-15-3579-laptop
+
+        Dell G Series Series, G3 17", Price: 1999 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 1152 GB, Display: 17.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 3.27 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g3-17-gaming-laptop/spd/g-series-17-3779-laptop
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Acer Aspire Series, Aspire 7, Price: 1999 AUD, CPU: 8300H, GPU: GTX 1060 , Memory: 16 GB, Hadr Drive: 256 GB, Display: 17.3 inch, Resolution: 1920*1080pixels, Touchable: N, Active Pen: N, Battery: 60 Whr, Weight: 3 kilograms. And for more information you can visit: https://www.acer.com/ac/en/AU/content/model/NH.GXESA.003
+        
+        Dell G Series Series, G5 15", Price: 1999 AUD, CPU: 8750H, GPU: GTX 1060 Max Q, Memory: 8 GB, Hadr Drive: 1152 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 2.65 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g5-15-gaming-laptop/spd/g-series-15-5587-laptop
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>       
+</random></template>
+</category></topic>
+
+<topic name="GAME">
+<category><pattern>MEDIUM</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        HP Pavilion Series, Pavilion 15'', Price: 2099 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 1280 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: N, Active Pen: N, Battery: 52.5 Whr, Weight: 2.17 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4DY98PA
+
+        HP OMEN Series, OMEN 15'', Price: 2199 AUD, CPU: 8750H, GPU: GTX 1060 , Memory: 16 GB, Hadr Drive: 1152 GB, Display: 15.6 inch, Resolution: 1920 x 1280pixels, Touchable: N, Active Pen: N, Battery: 70 Whr, Weight: 2.25 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=4ZD60PA
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Dell G Series Series, G7 15", Price: 2299 AUD, CPU: 8750H, GPU: GTX 1060 Max Q, Memory: 16 GB, Hadr Drive: 1280 GB, Display: 15.7 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 56 Whr, Weight: 2.86 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/dell-g7-15-gaming-laptop/spd/g-series-15-7588-laptop        
+        
+        HP OMEN Series, OMEN 17'', Price: 2599 AUD, CPU: 7700HQ, GPU: GTX 1050 , Memory: 16 GB, Hadr Drive: 2048 GB, Display: 17.3 inch, Resolution: 1920 x 1280pixels, Touchable: N, Active Pen: N, Battery: 85 Whr, Weight: 3.78 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=2JQ27PA
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+              
+        <li>Here are the computers recommended for you:
+        
+        Dell Alienware Series, Alienware 13'', Price: 2799 AUD, CPU: 7700HQ, GPU: GTX 1060 , Memory: 16 GB, Hadr Drive: 512 GB, Display: 13.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 76 Whr, Weight: 2.6 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/alienware-13-gaming-laptop/spd/alienware-13-laptop
+
+        Dell XPS Series, XPS 15'', Price: 2999 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: N, Battery: 97 Whr, Weight: 2 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/xps-15/spd/xps-15-9570-laptop?appliedRefinements=402
+
+        Dell Alienware Series, Alienware 15'', Price: 2999 AUD, CPU: 8750H, GPU: GTX 1070, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 99 Whr, Weight: 3.49 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/new-alienware-15-gaming-laptop/spd/alienware-15-laptop
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>        
+</random></template>
+</category></topic>
+
+<topic name="GAME">
+<category><pattern>HIGH</pattern>
+<template><random>
+        <li>Here are the computers recommended for you:
+
+        Dell Alienware Series, Alienware m15", Price: 3499 AUD, CPU: 8750H, GPU: GTX 1070 Max Q, Memory: 16 GB, Hadr Drive: 1152 GB, Display: 15.6 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 90 Whr, Weight: 2.16 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/new-alienware-m15-gaming-laptop/spd/alienware-m15-laptop
+        
+        Dell Alienware Series, Alienware 17", Price: 3699 AUD, CPU: 8750H, GPU: GTX 1070, Memory: 16 GB, Hadr Drive: 512 GB, Display: 17.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 99 Whr, Weight: 4.42 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/alienware-17-gaming-laptop/spd/alienware-17-laptop
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+        
+        <li>Here are the computers recommended for you:
+
+        Lenovo ThinkPad Series, X1 Extreme, Price: 3999 AUD, CPU: 8750H, GPU: GTX 1050 Ti, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.6 inch, Resolution: 3840 x 2160pixels, Touchable: Y, Active Pen: Y, Battery: 80 Whr, Weight: 1.8 kilograms. And for more information you can visit: https://www.lenovo.com/au/en/laptops/thinkpad/thinkpad-x/ThinkPad-X1-Extreme/p/20MFCTO1WWENAU3/customize?
+        
+        Apple MacBook Pro Series, MacBook Pro 15", Price: 4099 AUD, CPU: 8750H, GPU: Redeon Pro 550X, Memory: 16 GB, Hadr Drive: 512 GB, Display: 15.4 inch, Resolution: 2880*1800pixels, Touchable: N, Active Pen: N, Battery: 83.6 Whr, Weight: 1.82 kilograms. And for more information you can visit: https://www.apple.com/au/shop/buy-mac/macbook-pro/15-inch-space-grey-2.6ghz-6-core-512gb#
+        
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li> 
+              
+        <li>Here are the computers recommended for you:
+
+        HP OMEN Series, OMEN X 17", Price: 4599 AUD, CPU: 7820HK, GPU: GTX 1080, Memory: 16 GB, Hadr Drive: 1024 GB, Display: 17.3 inch, Resolution: 1920 x 1280pixels, Touchable: N, Active Pen: N, Battery: 99 Whr, Weight: 4.52 kilograms. And for more information you can visit: http://h20386.www2.hp.com/AustraliaStore/Merch/Product.aspx?id=2UJ72PA
+        
+        Dell Alienware Series, Alienware 17", Price: 3699 AUD, CPU: 8750H, GPU: GTX 1070, Memory: 16 GB, Hadr Drive: 512 GB, Display: 17.3 inch, Resolution: 1920 x 1080pixels, Touchable: N, Active Pen: N, Battery: 99 Whr, Weight: 4.42 kilograms. And for more information you can visit: https://www.dell.com/en-au/shop/dell-laptops/alienware-17-gaming-laptop/spd/alienware-17-laptop
+
+        Type another price tag (low, medium, high) to see more computers;
+        or specify another type of computers (General, Student, Business, Coding, Design, Game).
+        </li>        
+</random></template>
+</category></topic>
+
+<category><pattern>HELLO</pattern>
+<template><srai>HI</srai></template>
+</category>
+<category><pattern>AHOY</pattern>
+<template><srai>HI<star/></srai></template>
+</category>
+<category><pattern>GOODBYE</pattern>
+<template><srai>BYE<star/></srai></template>
+</category>
+<category><pattern>BYEBYE</pattern>
+<template><srai>BYE<star/></srai></template>
+</category>
+<category><pattern>HI</pattern>
+<template><random>
+        <li>HI <get name="username"/>!</li>
+        <li>Hello there!</li>
+        <li>Good day, <get name="username"/>!</li>   
+    </random></template>
+</category>
+<category><pattern>BYE</pattern>
+<template>Bye <get name="username"/>! Thanks for the conversation!</template>
+</category>
+</aiml>
